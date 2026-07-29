@@ -1083,8 +1083,77 @@ ul {
   .breath-bullet {
     animation: none;
   }
-
+}
   .btn:hover {
     transform: none;
   }
+  .nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
+
+
+.nav__instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--navy);
+  transition: color 0.25s ease;
+}
+
+.nav__instagram svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.nav__instagram:hover {
+  color: var(--sun);
+}
+
+.presentacion__instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--foam) !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(253, 251, 245, 0.4);
+  padding-bottom: 2px;
+}
+
+.presentacion__instagram:hover {
+  border-bottom-color: var(--foam);
+}
+
+.presentacion__instagram svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.site-footer__instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--foam) !important;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-footer__instagram:hover {
+  text-decoration: underline;
+}
+
+.site-footer__instagram svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
