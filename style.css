@@ -771,17 +771,17 @@ ul {
   object-position: center 30%;
 }
 
-.programa__bg::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(14, 58, 83, 0.75) 0%,
-    rgba(14, 58, 83, 0.25) 45%,
-    rgba(253, 251, 245, 0.05) 100%
-  );
+@media (max-width: 767px) {
+  .programa__bg::after {
+    background: linear-gradient(
+      to top,
+      rgba(14, 58, 83, 0.85) 0%,
+      rgba(14, 58, 83, 0.55) 50%,
+      rgba(14, 58, 83, 0.15) 100%
+    );
+  }
 }
+
 
 .programa__inner {
   position: relative;
