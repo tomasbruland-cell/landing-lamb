@@ -24,8 +24,8 @@
   --shadow-btn-hover: 0 6px 20px rgba(232, 169, 76, 0.35);
 
   --container-max: 1080px;
-  --section-pad: clamp(5rem, 12vw, 9rem);
-  --section-gap: clamp(3rem, 6vw, 5rem);
+  --section-pad: clamp(4rem, 10vw, 9rem);
+  --section-gap: clamp(2.5rem, 5vw, 5rem);
   --transition: 0.6s ease-out;
 }
 
@@ -589,7 +589,7 @@ ul {
 
 .para-quien__grid {
   display: grid;
-  gap: clamp(3rem, 6vw, 5rem);
+  gap: clamp(2rem, 5vw, 5rem);
 }
 
 .para-quien__col {
