@@ -118,6 +118,7 @@ ul {
   font-size: clamp(1.875rem, 4.5vw, 2.75rem);
   line-height: 1.2;
   color: var(--navy);
+  margin-top: clamp(0.5rem, 3vw, 1.5rem);
   margin-bottom: var(--section-gap);
   letter-spacing: -0.01em;
 }
@@ -466,7 +467,7 @@ ul {
 }
 
 .problema__remate {
-  padding: clamp(2rem, 5vw, 3rem) 0 0;
+  padding: clamp(2rem, 5vw, 3rem) 0 clamp(2rem, 6vw, 4rem);
   border-top: none;
   border-left: none;
   background: transparent;
@@ -541,23 +542,23 @@ ul {
 
 .presentacion__video {
   width: 100%;
+  max-width: 480px;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   background: var(--navy);
   border-radius: var(--radius-img);
+  margin-inline: auto;
 }
 
 .presentacion__photo {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
+  width: 100%;
 }
 
 .presentacion__photo img {
   width: 100%;
   object-fit: cover;
-  max-height: 70vh;
-  border-radius: 0;
+  max-height: 320px;
+  border-radius: var(--radius-img);
 }
 
 .presentacion__text p {
@@ -583,7 +584,7 @@ ul {
 
   .presentacion__photo img {
     border-radius: var(--radius-img);
-    max-height: 520px;
+    max-height: 400px;
   }
 }
 
@@ -684,6 +685,7 @@ ul {
 /* --- Pilares --- */
 .pilares {
   background: var(--foam);
+  padding-bottom: clamp(3rem, 8vw, 5rem);
 }
 
 .pilares__grid {
@@ -883,6 +885,7 @@ ul {
   flex-wrap: wrap;
   gap: 0.75rem;
   justify-content: center;
+  margin-bottom: clamp(2rem, 6vw, 4rem);
 }
 
 .pill {
