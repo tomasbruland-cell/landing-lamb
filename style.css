@@ -557,6 +557,7 @@ ul {
 .presentacion__photo img {
   width: 100%;
   object-fit: cover;
+  object-position: center 100%;
   max-height: 320px;
   border-radius: var(--radius-img);
 }
@@ -584,6 +585,8 @@ ul {
 
   .presentacion__photo img {
     border-radius: var(--radius-img);
+    object-fit: cover;
+    object-position: center 100%;
     max-height: 400px;
   }
 }
