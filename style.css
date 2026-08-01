@@ -326,9 +326,33 @@ ul {
   min-height: 100svh;
   display: flex;
   align-items: center;
-  background: linear-gradient(180deg, #1B8CA8 0%, #8FD3E8 100%);
+  background: #E8DDD0;
   overflow: hidden;
   padding-block: clamp(6rem, 14vw, 10rem) clamp(4rem, 10vw, 7rem);
+}
+
+.hero__bg-photo {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero__bg-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__bg-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(232, 221, 208, 0.55) 0%,
+    rgba(232, 221, 208, 0.4) 50%,
+    rgba(232, 221, 208, 0.65) 100%
+  );
 }
 
 .hero__bg {
@@ -930,9 +954,9 @@ ul {
   position: relative;
   background: linear-gradient(
     165deg,
-    rgba(14, 58, 83, 0.92) 0%,
-    rgba(27, 140, 168, 0.85) 60%,
-    rgba(232, 169, 76, 0.25) 100%
+    rgba(61, 50, 41, 0.94) 0%,
+    rgba(138, 117, 96, 0.88) 60%,
+    rgba(201, 184, 168, 0.3) 100%
   );
   overflow: hidden;
   padding-block: var(--section-pad);
